@@ -1,0 +1,9 @@
+# This is an Antora component without navigation
+# It provides a place partials, images, attachments to be used in multiple sites.
+# - Add the styleguide or this library as a source in a playbook:
+#   - Option 1: add the styleguide as git submodule, and then <submodule path>/lib/antora as start_path
+#   - Option 2: add the styleguide repo as source, and then lib/antora as start_path
+# - Use include::lib-style::partial$some-part.adoc[] to include a partial from the library.
+name: lib-style
+title: Style library
+version: ~

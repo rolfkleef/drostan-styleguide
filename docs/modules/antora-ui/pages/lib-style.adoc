@@ -1,0 +1,71 @@
+= Style library
+
+== Introduction
+
+The styleguide repository contains an Antora component that can be included as a _library_ in a documentation site.
+This component does not define any pages, but contains files in the other _content families_:
+images, snippets, examples, and so on.
+
+[NOTE]
+====
+The Antora UI for drostan is adapted to not include the library when building the site components menu.
+
+This effectively makes it a _hidden_ component.
+====
+
+== Adding the style library to a site
+
+The easiest way is to add the styleguide repository as git submodule to the repository containing the Antora playbook.
+
+  $ git submodule add https://gitlab.com/rolfkleef/drostan-styleguide.git styleguide
+
+[TIP]
+====
+Adding the styleguide as submodule will also make other style elements available:
+
+- A PlantUML configuration file that can be inserted in each diagram, to create consistent styling.
+- Vale style libraries to check writing style.
+- CSL definitions to use in Zotero bibliography exports.
+====
+
+In the playbook, add the library component as start path like below:
+
+[source, yaml]
+----
+# ...
+
+content:
+  sources:
+  - url: .
+    branches: main
+    start_paths:
+    - docs/component1
+    - docs/component2
+    - styleguide/lib/antora
+
+# ...
+----
+
+== Including elements from the library
+
+Use standard Antora references to include elements:
+
+.Include a partial
+====
+[source, asciidoc]
+----
+\include::lib-style::partial$example.adoc[]
+----
+
+include::lib-style::partial$example.adoc[]
+====
+
+.Include an image
+====
+[source, asciidoc]
+----
+image::lib-style::slide-haidagwaii.png[]
+----
+
+image::lib-style::slide-haidagwaii.png[]
+====

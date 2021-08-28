@@ -1,0 +1,1 @@
+NOTE: I am an example library item taken from the style guide.
