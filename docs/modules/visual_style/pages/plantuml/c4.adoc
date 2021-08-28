@@ -6,7 +6,7 @@ The https://c4model.com/[C4 Models^] offer multiple diagram types.
 [plantuml]
 ....
 @startmindmap
-include::partial$plantuml-wbsmm-style.iuml[]
+include::lib-style::partial$plantuml-wbsmm-style.iuml[]
 * C4 models
  * Root models
   * Level 1, System context
