@@ -21,14 +21,14 @@ The easiest way is to add the styleguide repository as git submodule to the repo
 
 [TIP]
 ====
-Adding the styleguide as submodule will also make other style elements available:
+Adding the styleguide as submodule will make other style elements available:
 
 - A PlantUML configuration file that can be inserted in each diagram, to create consistent styling.
 - Vale style libraries to check writing style.
 - CSL definitions to use in Zotero bibliography exports.
 ====
 
-In the playbook, add the library component as start path like below:
+In the playbook, add the library component repository like below:
 
 [source, yaml]
 ----

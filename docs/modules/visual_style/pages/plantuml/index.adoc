@@ -1,4 +1,4 @@
-= PlantUML diagrams styling
+= PlantUML diagrams
 
 == Overview
 
@@ -35,12 +35,12 @@ Two pointers for more information on the syntax and the meaning of diagrams:
 - The https://plantuml.com[PlantUML website^] shows how to specify and adapt elements of diagrams in more detail.
 - https://www.uml-diagrams.org/[Find out more about UML diagrams^]
 
-== Color conventions
+== Colour conventions
 
 We include a PlantUML configuration file when generating diagram images.
 This configuration file uses color variables across UML elements, divided in types of diagram elements.
 
-.Color conventions for types of diagram elements
+.Colour conventions for types of diagram elements
 [plantuml]
 ....
 @startuml
