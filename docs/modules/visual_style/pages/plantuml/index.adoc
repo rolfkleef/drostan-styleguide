@@ -76,6 +76,25 @@ participant "Note" <<note>>
 @enduml
 ....
 
+The boxes above are coloured using stereotypes.
+It is also possible to use variables for individual elements.
+However, this does not include foreground and border colours.
+
+.Example: the primary node uses a stereotype, the others plain colours
+[source, plantuml]
+....
+skinparam participant<<node_1>> {
+  $node_1_style(1)
+}
+participant "Primary node" <<node 1>>
+
+participant "Secondary node" $node_2_main_color
+participant "Logic element" $logic_main_color
+participant "Grouping element" $group_main_color
+participant "Divider element" $divider_main_color
+participant "Note" $note_main_color
+....
+
 The admonition colors are also included, to make it easy to use them in diagrams as well.
 
 .Using admonition colors for elements
