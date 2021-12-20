@@ -15,19 +15,6 @@ This effectively makes it a _hidden_ component.
 
 == Adding the style library to a site
 
-The easiest way is to add the styleguide repository as git submodule to the repository containing the Antora playbook.
-
-  $ git submodule add https://gitlab.com/rolfkleef/drostan-styleguide.git styleguide
-
-[TIP]
-====
-Adding the styleguide as submodule will make other style elements available:
-
-- A PlantUML configuration file that can be inserted in each diagram, to create consistent styling.
-- Vale style libraries to check writing style.
-- CSL definitions to use in Zotero bibliography exports.
-====
-
 In the playbook, add the library component repository like below:
 
 [source, yaml]
@@ -41,7 +28,11 @@ content:
     start_paths:
     - docs/component1
     - docs/component2
-    - styleguide/lib/antora
+
+  - url: https://gitlab.com/rolfkleef/drostan-styleguide.git
+    branches: main
+    start_paths:
+    - lib/antora
 
 # ...
 ----
@@ -69,3 +60,27 @@ image::lib-style::slide-haidagwaii.png[]
 
 image::lib-style::slide-haidagwaii.png[]
 ====
+
+== Adding the style library as git submodule
+
+You can also add the styleguide repository as git submodule to the repository containing the Antora playbook.
+
+  $ git submodule add https://gitlab.com/rolfkleef/drostan-styleguide.git styleguide
+
+[TIP]
+====
+Adding the styleguide as submodule will make other style elements available:
+
+- A PlantUML configuration file that can be inserted in each diagram, to create consistent styling.
+- Vale style libraries to check writing style.
+- CSL definitions to use in Zotero bibliography exports.
+====
+
+[WARNING]
+====
+It appears that using a git submodule as start path in the playbook does not work.
+
+Also, using the submodule directory as git source does not work:
+the directory does not contain a regular git directory.
+====
+
