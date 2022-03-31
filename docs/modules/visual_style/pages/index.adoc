@@ -1,1 +1,45 @@
 = Visual style
+
+== Color scheme
+
+[cols="1,3,3"]
+|===
+|Colour |Code |Type
+
+|[.colorswatch.cs-primary-color]#-#
+|#08427b
+|primary
+
+|[.colorswatch.cs-secondary-color]#-#
+|#1168bd
+|secondary
+
+|[.colorswatch.cs-heading-font-color]#-#
+|#e91e63
+|arrow
+
+|[.colorswatch.cs-link-font-color]#-#
+|#3498DB
+|link
+
+|[.colorswatch.cs-important-color]#-#
+|#d32f2f
+|important
+
+|[.colorswatch.cs-warning-color]#-#
+|#e18114
+|warning
+
+|[.colorswatch.cs-caution-color]#-#
+|#a0439c
+|caution
+
+|[.colorswatch.cs-note-color]#-#
+|#217ee7
+|note
+
+|[.colorswatch.cs-tip-color]#-#
+|#41af46
+|tip
+
+|===

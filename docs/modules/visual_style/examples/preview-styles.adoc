@@ -11,50 +11,56 @@ Author Name
 
 == Colours
 
-[cols="2,3"]
+[cols="2a,3"]
 |===
 |Colours |Application
 
-|+++<div class="colorswatch bg--doc-font-color"></div>+++
-+++<div class="colorswatch bg--heading-font-color"></div>+++
-+++<div class="colorswatch bg--link-font-color"></div>+++
-+++<div class="colorswatch bg--link_hover-font-color"></div>+++
+|[.colorswatch.boxed.cs-doc-font-color]#-#
+[.colorswatch.boxed.cs-heading-font-color]#-#
+[.colorswatch.boxed.cs-link-font-color]#-#
+[.colorswatch.boxed.cs-link_hover-font-color]#-#
 |Document text: body, heading, link, hovered link
 
-|+++<div class="colorswatch bg--nav-heading-font-color"></div>+++
-+++<div class="colorswatch bg--nav-muted-color"></div>+++
-+++<div class="colorswatch bg--nav-background"></div>+++
-+++<div class="colorswatch bg--navbar-menu_hover-background"></div>+++
-+++<div class="colorswatch bg--nav-border-color"></div>+++
+|[.colorswatch.boxed.cs-doc-font-color]#-#
+[.colorswatch.boxed.cs-heading-font-color]#-#
+[.colorswatch.boxed.cs-link-font-color]#-#
+[.colorswatch.boxed.cs-link_hover-font-color]#-#
+|Document text: body, heading, link, hovered link
+
+|[.colorswatch.boxed.cs-nav-heading-font-color]#-#
+[.colorswatch.boxed.cs-nav-muted-color]#-#
+[.colorswatch.boxed.cs-nav-background]#-#
+[.colorswatch.boxed.cs-navbar-menu_hover-background]#-#
+[.colorswatch.boxed.cs-nav-border-color]#-#
 |Content navigation: heading, muted, background, hover, border
 
-|+++<div class="colorswatch bg--navbar-font-color"></div>+++
-+++<div class="colorswatch bg--navbar-background"></div>+++
-+++<div class="colorswatch bg--navbar_hover-background"></div>+++
-+++<div class="colorswatch bg--navbar-button-background"></div>+++
+|[.colorswatch.boxed.cs-navbar-font-color]#-#
+[.colorswatch.boxed.cs-navbar-background]#-#
+[.colorswatch.boxed.cs-navbar_hover-background]#-#
+[.colorswatch.boxed.cs-navbar-button-background]#-#
 |Navigation bar: text, background, hover, button
 
-|+++<div class="colorswatch bg--navbar-menu-font-color"></div>+++
-+++<div class="colorswatch bg--navbar-menu-background"></div>+++
-+++<div class="colorswatch bg--navbar-menu_hover-background"></div>+++
-+++<div class="colorswatch bg--navbar-menu-border-color"></div>+++
+|[.colorswatch.boxed.cs-navbar-menu-font-color]#-#
+[.colorswatch.boxed.cs-navbar-menu-background]#-#
+[.colorswatch.boxed.cs-navbar-menu_hover-background]#-#
+[.colorswatch.boxed.cs-navbar-menu-border-color]#-#
 |Navigation menu: text, background, hover, border
 
-|+++<div class="colorswatch bg--doc-background-color"></div>+++
-+++<div class="colorswatch bg--body-background)"></div>+++
-+++<div class="colorswatch bg--panel-background)"></div>+++
+|[.colorswatch.boxed.cs-doc-background-color]#-#
+[.colorswatch.boxed.cs-body-background)]#-#
+[.colorswatch.boxed.cs-panel-background)]#-#
 |Backgrounds: document, page, panel
 
-|+++<div class="colorswatch bg--footer-background"></div>+++
-+++<div class="colorswatch bg--footer-font-color"></div>+++
-+++<div class="colorswatch bg--footer-link-font-color"></div>+++
+|[.colorswatch.boxed.cs-footer-background]#-#
+[.colorswatch.boxed.cs-footer-font-color]#-#
+[.colorswatch.boxed.cs-footer-link-font-color]#-#
 |Footer: background, text, link
 
-|+++<div class="colorswatch bg--important-color fg--important-on-color">Important</div>+++
-+++<div class="colorswatch bg--warning-color fg--warning-on-color">Warning</div>+++
-+++<div class="colorswatch bg--caution-color fg--caution-on-color">Caution</div>+++
-+++<div class="colorswatch bg--note-color fg--note-on-color">Note</div>+++
-+++<div class="colorswatch bg--tip-color fg--tip-on-color">Tip</div>+++
+|[.colorswatch.boxed.cs-important-color]#Important#
+[.colorswatch.boxed.cs-warning-color]#Warning#
+[.colorswatch.boxed.cs-caution-color]#Caution#
+[.colorswatch.boxed.cs-note-color]#Note#
+[.colorswatch.boxed.cs-tip-color]#Tip#
 |Admonitions: important, warning, caution, note, tip
 
 |===
