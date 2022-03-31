@@ -42,8 +42,7 @@ This configuration file uses color variables across UML elements, divided in typ
 
 .Colour conventions for types of diagram elements
 [plantuml]
-....
-@startuml
+----
 skinparam participant<<node_1>> {
   $node_1_style(1)
 }
@@ -73,8 +72,7 @@ participant "Divider element" <<divider>>
 participant "Note" <<note>>
 
 "Primary node" -> "Note" : messages and flows
-@enduml
-....
+----
 
 The boxes above are coloured using stereotypes.
 It is also possible to use variables for individual elements.
@@ -99,8 +97,7 @@ The admonition colors are also included, to make it easy to use them in diagrams
 
 .Using admonition colors for elements
 [plantuml]
-....
-@startuml
+----
 hide footbox
 
 participant tip <<(T,$tip_color)>>
@@ -117,13 +114,11 @@ participant caution <<(C,$caution_color)>>
 
 participant important <<(I,$important_color)>>
 / note over important $important_color: Important
-@enduml
-....
+----
 
 .Source for the example above
 [source, plantuml]
-....
-@startuml
+----
 hide footbox
 
 participant tip <<(T,$tip_color)>>
@@ -140,8 +135,7 @@ participant caution <<(C,$caution_color)>>
 
 participant important <<(I,$important_color)>>
 / note over important $important_color: Important
-@enduml
-....
+----
 
 
 == Add the PlantUML configuration
