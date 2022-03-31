@@ -87,7 +87,7 @@ Author Name
 [discrete]
 ====== Heading 5
 
-=== Paragraphs 
+=== Paragraphs
 
 [.lead]
 *Lead paragraph (preamble).*
@@ -124,7 +124,7 @@ Maecenas #commodo euismod mauris#, at dignissim augue.
 Subscript, superscript::
 Maecenas ~nec~ sem ^metus^.
 
-Curved quotation marks and apostrophes:: 
+Curved quotation marks and apostrophes::
 Praesent "`sapien`" nisi, '`rutrum`' in justo `'sit amet, inter'dum molestie`' dui.
 
 Underline and strikethrough::
@@ -359,6 +359,25 @@ In hac habitasse platea dictumst.
 
 // end::blocks[]
 
+=== Collapsible blocks
+
+.Click to open/close the details (default closed)
+[%collapsible]
+====
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+Proin lobortis rhoncus venenatis.
+Mauris at dolor vel urna tristique mattis.
+Nam dignissim neque ante, quis tincidunt leo consequat vel.
+====
+
+.Click to open/close the details (default open)
+[%collapsible%open]
+====
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Vivamus sollicitudin ac mauris eget imperdiet.
+Etiam vulputate nunc eget volutpat aliquam.
+====
+
 == Images
 
 === Image file
@@ -401,7 +420,7 @@ image::multirepo-ssg.svg[Aenean tempus in mauris non pretium.,400]
 == Special document sections
 
 [abstract]
-=== Abstract 
+=== Abstract
 
 [abstract]
 Morbi suscipit risus quis rutrum eleifend.
