@@ -2,12 +2,12 @@
 
 == Elements
 
-[source, treeview]
-....
-include::example$treeview.source[]
-....
+[cols="2*a"]
+|===
+h|Treeview source
+h|Rendering
 
-.Treeview source
+|
 [source, asciidoc]
 ----
 [source, treeview]
@@ -15,6 +15,12 @@ include::example$treeview.source[]
 include::example$treeview.source[]
 ....
 ----
+|
+[source, treeview]
+....
+include::example$treeview.source[]
+....
+|===
 
 == Notes
 
