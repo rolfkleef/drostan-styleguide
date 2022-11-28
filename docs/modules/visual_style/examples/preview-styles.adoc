@@ -324,6 +324,11 @@ Morbi pulvinar auctor mauris vulputate viverra.
 
 === Source code
 
+[source]
+----
+plain text
+----
+
 .Optional title
 [source,ruby,linenums,highlight=4..5]
 ----
@@ -378,12 +383,17 @@ Vivamus sollicitudin ac mauris eget imperdiet.
 Etiam vulputate nunc eget volutpat aliquam.
 ====
 
-== Images
+== Media
 
-=== Image file
+=== Images
 
 .Optional title
 image::multirepo-ssg.svg[Aenean tempus in mauris non pretium.,400]
+
+=== Video
+
+.Video from Vimeo
+video::300817511[vimeo,1000,500]
 
 == Tables
 
