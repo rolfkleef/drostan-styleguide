@@ -73,19 +73,19 @@ Author Name
 === Headings
 
 [discrete]
-== Heading 1
+= Heading 1
 
 [discrete]
-=== Heading 2
+== Heading 2
 
 [discrete]
-==== Heading 3
+=== Heading 3
 
 [discrete]
-===== Heading 4
+==== Heading 4
 
 [discrete]
-====== Heading 5
+===== Heading 5
 
 === Paragraphs
 
