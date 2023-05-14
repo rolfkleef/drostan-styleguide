@@ -4,6 +4,7 @@
 *** xref:plantuml/usecase.adoc[]
 *** xref:plantuml/activity.adoc[]
 *** xref:plantuml/sequence.adoc[]
+*** xref:plantuml/deployment.adoc[]
 *** xref:plantuml/c4.adoc[]
 ** xref:mermaid.adoc[]
 ** xref:treeview.adoc[]
