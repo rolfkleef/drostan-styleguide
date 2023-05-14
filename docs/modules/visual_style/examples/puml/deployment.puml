@@ -1,0 +1,64 @@
+@startuml
+actor actor
+usecase usecase
+actor - usecase
+
+cloud cloud {
+    agent agent
+    boundary boundary
+    card card
+    collections collections
+    control control
+    database database
+    entity entity
+    label label
+    node node {
+        port p1
+        port p2
+        component component
+        interface interface
+        component - interface
+    }
+    queue queue
+    stack stack
+    storage storage
+
+    stack -- boundary
+    stack -- control
+    stack -- entity
+
+    component -- database
+    database --* storage
+    component -- queue
+    queue --o stack
+    component -- collections
+    collections 0)-- card
+}
+
+actor --(0)-> agent
+actor --->> agent
+actor -- p1
+actor -- p2
+agent -- interface
+
+folder folder {
+    package package
+    artifact artifact
+    file file
+    package -- artifact
+    artifact -- file
+}
+
+card --- package
+
+frame frame {
+    circle circle
+    hexagon hexagon
+    rectangle rectangle
+    hexagon 0==@ rectangle
+    circle ..# hexagon
+}
+
+card --- frame
+
+@enduml
