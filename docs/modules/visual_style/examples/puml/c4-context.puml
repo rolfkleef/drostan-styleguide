@@ -1,6 +1,5 @@
 @startuml
 !include <C4/C4_Context>
-!include <tupadr3/font-awesome/users>
 
 LAYOUT_WITH_LEGEND()
 

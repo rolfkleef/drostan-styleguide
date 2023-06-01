@@ -4,7 +4,7 @@
 
 .PlantUML Diagrams
 [plantuml]
-....
+----
 @startmindmap
 include::lib-style::partial$plantuml-wbsmm-style.iuml[]
 * PlantUML
@@ -26,8 +26,9 @@ include::lib-style::partial$plantuml-wbsmm-style.iuml[]
   * Mindmaps
   * Work Breakdown Structures (WBS)
   * C4 diagrams
+ * abc
 @endmindmap
-....
+----
 
 The next pages show examples of diagrams with their available elements, to verify the styling.
 Two pointers for more information on the syntax and the meaning of diagrams:
@@ -43,98 +44,29 @@ This configuration file uses color variables across UML elements, divided in typ
 .Colour conventions for types of diagram elements
 [plantuml]
 ----
-skinparam participant<<node_1>> {
-  $node_1_style(1)
-}
-skinparam participant<<node_2>> {
-  $node_2_style(1)
-}
-skinparam participant<<logic>> {
-  $logic_style(1)
-}
-skinparam participant<<group>> {
-  $group_style(1)
-}
-skinparam participant<<divider>> {
-  $divider_style(1)
-}
-skinparam participant<<note>> {
-  $note_1_style(1)
-}
-
-hide footbox
-
-participant "Primary node" <<node 1>>
-participant "Secondary node" <<node 2>>
-participant "Logic element" <<logic>>
-participant "Grouping element" <<group>>
-participant "Divider element" <<divider>>
-participant "Note" <<note>>
-
-"Primary node" -> "Note" : messages and flows
+include::example$puml/colour_conventions.puml[]
 ----
 
 The boxes above are coloured using stereotypes.
-It is also possible to use variables for individual elements.
-However, this does not include foreground and border colours.
 
-.Example: the primary node uses a stereotype, the others plain colours
+.Source for the example above
 [source, plantuml]
-....
-skinparam participant<<node_1>> {
-  $node_1_style(1)
-}
-participant "Primary node" <<node 1>>
-
-participant "Secondary node" $node_2_main_color
-participant "Logic element" $logic_main_color
-participant "Grouping element" $group_main_color
-participant "Divider element" $divider_main_color
-participant "Note" $note_main_color
-....
+----
+include::example$puml/colour_conventions.puml[]
+----
 
 The admonition colors are also included, to make it easy to use them in diagrams as well.
 
 .Using admonition colors for elements
 [plantuml]
 ----
-hide footbox
-
-participant tip <<(T,$tip_color)>>
-note over tip $tip_color: Tip
-
-participant note <<(N,$note_color)>>
-/ note over note $note_color: Note
-
-participant warning <<(W,$warning_color)>>
-/ note over warning $warning_color: Warning
-
-participant caution <<(C,$caution_color)>>
-/ note over caution $caution_color: Caution
-
-participant important <<(I,$important_color)>>
-/ note over important $important_color: Important
+include::example$puml/admonition_colours.puml[]
 ----
 
 .Source for the example above
 [source, plantuml]
 ----
-hide footbox
-
-participant tip <<(T,$tip_color)>>
-note over tip $tip_color: Tip
-
-participant note <<(N,$note_color)>>
-/ note over note $note_color: Note
-
-participant warning <<(W,$warning_color)>>
-/ note over warning $warning_color: Warning
-
-participant caution <<(C,$caution_color)>>
-/ note over caution $caution_color: Caution
-
-participant important <<(I,$important_color)>>
-/ note over important $important_color: Important
+include::example$puml/admonition_colours.puml[]
 ----
 
 

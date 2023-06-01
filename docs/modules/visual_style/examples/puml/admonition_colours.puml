@@ -1,0 +1,19 @@
+@startuml
+hide footbox
+skinparam MinimumWidth 100
+
+participant tip <<(T,$adm_tip_color)>>
+/ note over tip <<adm_tip>>: Tip
+
+participant note <<(N,$adm_note_color)>>
+/ note over note <<adm_note>>: Note
+
+participant warning <<(W,$adm_warning_color)>>
+/ note over warning <<adm_warning>>: Warning
+
+participant caution <<(C,$adm_caution_color)>>
+/ note over caution <<adm_caution>>: Caution
+
+participant important <<(I,$adm_important_color)>>
+/ note over important <<adm_important>>: Important
+@enduml
