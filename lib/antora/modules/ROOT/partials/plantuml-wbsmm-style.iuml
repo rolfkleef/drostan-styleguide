@@ -1,5 +1,6 @@
 <style>
 mindmapDiagram {
+  BackgroundColor transparent
   node {
     BackgroundColor #1168bd
     LineColor #1168bd

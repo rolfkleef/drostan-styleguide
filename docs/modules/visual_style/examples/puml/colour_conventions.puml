@@ -1,0 +1,14 @@
+@startuml
+hide footbox
+hide stereotype
+skinparam MinimumWidth 100
+
+participant "Primary node" <<node_1>>
+participant "Secondary node" <<node_2>>
+participant "Logic element" <<logic>>
+participant "Grouping element" <<grouping>>
+participant "Divider element" <<divider>>
+participant "Comment" <<comment>>
+
+"Primary node" -> "Comment" : messages and flows
+@enduml

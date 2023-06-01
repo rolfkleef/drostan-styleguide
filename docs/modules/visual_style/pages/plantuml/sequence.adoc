@@ -5,11 +5,11 @@
 .Core elements of a sequence diagram
 [plantuml]
 ....
-include::./../../examples/puml/sequence.puml[]
+include::example$puml/sequence.puml[]
 ....
 
 .PlantUML source
 [source, plantuml]
 ....
-include::./../../examples/puml/sequence.puml[]
+include::example$puml/sequence.puml[]
 ....
