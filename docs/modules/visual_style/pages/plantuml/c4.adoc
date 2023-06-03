@@ -1,4 +1,4 @@
-= C4 diagrams
+= C4 models
 
 The https://c4model.com/[C4 Models^] offer multiple diagram types.
 

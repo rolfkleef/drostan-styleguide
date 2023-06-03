@@ -1,0 +1,22 @@
+= SDL (Specification and Description Language)
+
+In PlantUML, this is a variation of the xref:plantuml/activity.adoc[].
+
+== Elements
+
+[NOTE]
+====
+This is a gallery of most elements from the documentation.
+====
+
+.Core elements of an SDL diagram
+[plantuml]
+....
+include::./../../examples/puml/sdl.puml[]
+....
+
+.PlantUML source
+[source, plantuml]
+....
+include::./../../examples/puml/sdl.puml[]
+....

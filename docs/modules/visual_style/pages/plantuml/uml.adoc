@@ -1,0 +1,23 @@
+= UML (Unified Modeling Language)
+
+.PlantUML Diagrams
+[plantuml]
+----
+@startmindmap
+include::lib-style::partial$plantuml-wbsmm-style.iuml[]
+* UML diagrams
+ * Behaviour
+  * Use cases
+  * Activities
+  * States
+  * Interactions
+   * Sequences
+   * Communication
+ * Structure
+  * Classes
+  * Objects
+  * Packages
+  * Components
+  * Deployment
+@endmindmap
+----

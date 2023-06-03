@@ -7,26 +7,19 @@
 ----
 @startmindmap
 include::lib-style::partial$plantuml-wbsmm-style.iuml[]
-* PlantUML
- * UML diagrams
-  * Behaviour diagrams
-   * Use cases
-   * Activities
-   * States
-   * Interactions
-    * Sequences
-    * Communication
-  * Structure diagrams
-   * Classes
-   * Objects
-   * Packages
-   * Components
-   * Deployment
- * Other diagrams
-  * Mindmaps
-  * Work Breakdown Structures (WBS)
-  * C4 diagrams
- * abc
+<style>
+mindmapDiagram {
+  node {
+    MaximumWidth 400
+  }
+}
+</style>
+* PlantUML diagrams
+ * UML (Unified Modeling Language)
+ * C4 models
+ * Mindmaps
+ * WBS (Work Breakdown Structures)
+ * SDL (Specification and Description Language)
 @endmindmap
 ----
 
