@@ -1,4 +1,5 @@
 @startuml
+
 |Swimlane 1|
 start
 
@@ -12,7 +13,7 @@ start
       :Action C;
     endif
   }
-  
+
   repeat
     :Repeat;
     note right: Note
@@ -23,7 +24,7 @@ start
   fork again
     :Parallel Y;
   end merge
-  
+
   switch (Switch)
   case (Case i)
     :Action i;
@@ -37,19 +38,15 @@ else (two)
   -[dotted]->
 
   |Swimlane 2|
-  :Input<
-  :Output>
+  :Block|
+
   floating note right
     Floating note
     ----
     Second line
   end note
-  
-  :Block|
+
   :Rectangle]
-  :Parallel 1/
-  :Parallel 2\\
-  :Brackets}
 
   split
     :Kill;
@@ -64,7 +61,7 @@ else (two)
   end split
 endif
 
-|Swimlane 1|  
+|Swimlane 1|
 
 stop
 @enduml
