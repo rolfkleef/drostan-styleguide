@@ -1,8 +1,11 @@
-<svg id="drostan-logo" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
-  <g id="logo" fill="#ffffff" stroke-width="0">
-    <circle cx="250" cy="250" id="outline" opacity="0" r="250"/>
+<svg id="drostan-logo" viewBox="0 0 500 610" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&amp;display=swap');
+  </style>
+  <g id="logo" fill="#b90d55" stroke-width="0">
+    <circle cx="250" cy="250" id="outline" opacity="1" r="250"/>
 
-    <g id="logo-inner" fill="#000000">
+    <g id="logo-inner" fill="#ffffff">
       <circle id="leaf" cx="250" cy="60" r="30"/>
       <use href="#leaf" transform="rotate(-30 250 250)"/>
       <use href="#leaf" transform="rotate(-60 250 250)"/>
@@ -20,5 +23,7 @@
       <polygon points="185,210 65,250 185,225"/>
       <polygon points="315,210 435,250 315,225"/>
     </g>
+
+    <text style="font-size:86px;font-family:'Roboto';" x="30" y="590">drostan.org</text>
   </g>
 </svg>
