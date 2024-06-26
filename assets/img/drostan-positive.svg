@@ -1,6 +1,6 @@
 <svg id="drostan-logo" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
   <g id="logo" fill="#ffffff" stroke-width="0">
-    <circle cx="250" cy="250" id="outline" opacity="1" r="250"/>
+    <circle cx="250" cy="250" id="outline" opacity="0" r="250"/>
 
     <g id="logo-inner" fill="#b90d55">
       <circle id="leaf" cx="250" cy="60" r="30"/>
