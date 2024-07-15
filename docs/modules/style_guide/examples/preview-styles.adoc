@@ -11,59 +11,121 @@ Author Name
 
 == Colours
 
-[cols="2a,3"]
-|===
-|Colours |Application
+=== Interface
 
-|[.colorswatch.boxed.cs-doc-font-color]#-#
-[.colorswatch.boxed.cs-heading-font-color]#-#
-[.colorswatch.boxed.cs-link-font-color]#-#
-[.colorswatch.boxed.cs-link_hover-font-color]#-#
-|Document text: body, heading, link, hovered link
+++++
+<style>
+  .styletable {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    border: 1px solid light-dark(var(--md-sys-color-outline-light), var(--md-sys-color-outline-dark))
+  }
 
-|[.colorswatch.boxed.cs-doc-font-color]#-#
-[.colorswatch.boxed.cs-heading-font-color]#-#
-[.colorswatch.boxed.cs-link-font-color]#-#
-[.colorswatch.boxed.cs-link_hover-font-color]#-#
-|Document text: body, heading, link, hovered link
+  .styletable div {
+    display: flex;
+    flex-direction: column;
+  }
 
-|[.colorswatch.boxed.cs-nav-heading-font-color]#-#
-[.colorswatch.boxed.cs-nav-muted-color]#-#
-[.colorswatch.boxed.cs-nav-background]#-#
-[.colorswatch.boxed.cs-navbar-menu_hover-background]#-#
-[.colorswatch.boxed.cs-nav-border-color]#-#
-|Content navigation: heading, muted, background, hover, border
+  .styletable div div {
+    padding: 0.5rem;
+  }
 
-|[.colorswatch.boxed.cs-navbar-font-color]#-#
-[.colorswatch.boxed.cs-navbar-background]#-#
-[.colorswatch.boxed.cs-navbar_hover-background]#-#
-[.colorswatch.boxed.cs-navbar-button-background]#-#
-|Navigation bar: text, background, hover, button
+  .styletable div :first-child {
+    flex: 5rem
+  }
 
-|[.colorswatch.boxed.cs-navbar-menu-font-color]#-#
-[.colorswatch.boxed.cs-navbar-menu-background]#-#
-[.colorswatch.boxed.cs-navbar-menu_hover-background]#-#
-[.colorswatch.boxed.cs-navbar-menu-border-color]#-#
-|Navigation menu: text, background, hover, border
+  /* Light/dark mode styles */
+  main:has(#toggle-theme) .styletable {
+    color-scheme: light;
+  }
 
-|[.colorswatch.boxed.cs-doc-background-color]#-#
-[.colorswatch.boxed.cs-body-background)]#-#
-[.colorswatch.boxed.cs-panel-background)]#-#
-|Backgrounds: document, page, panel
+  main:has(#toggle-theme:checked) .styletable {
+    color-scheme: dark;
+  }
 
-|[.colorswatch.boxed.cs-footer-background]#-#
-[.colorswatch.boxed.cs-footer-font-color]#-#
-[.colorswatch.boxed.cs-footer-link-font-color]#-#
-|Footer: background, text, link
+  #toggle-theme {
+    display: none;
+  }
 
-|[.colorswatch.boxed.cs-important-color]#Important#
-[.colorswatch.boxed.cs-warning-color]#Warning#
-[.colorswatch.boxed.cs-caution-color]#Caution#
-[.colorswatch.boxed.cs-note-color]#Note#
-[.colorswatch.boxed.cs-tip-color]#Tip#
-|Admonitions: important, warning, caution, note, tip
+  /* Style for the label that will serve as our icon */
+  label[for="toggle-theme"] {
+    cursor: pointer;
+  }
 
-|===
+  label[for="toggle-theme"]:before {
+    content: 'light_mode';
+  }
+
+  /* Change the icon when the checkbox is checked */
+  #toggle-theme:checked + label[for="toggle-theme"]:before {
+    content: 'dark_mode';
+  }
+</style>
+
+<form>
+  <input type="checkbox" id="toggle-theme" name="toggle-theme"/>
+  <label for="toggle-theme" class="material-icons"></label>
+</form>
+
+<div class="styletable background">
+  <div>
+    <div class="primary">primary</div>
+    <div class="primary-container">primary container</div>
+  </div>
+  <div>
+    <div class="secondary">secondary</div>
+    <div class="secondary-container">secondary container</div>
+  </div>
+  <div>
+    <div class="tertiary">tertiary</div>
+    <div class="tertiary-container">tertiary container</div>
+  </div>
+
+  <div>
+    <div class="surface">surface</div>
+    <div class="surface-variant">surface-variant</div>
+  </div>
+  <div>
+    <div class="outline">outline</div>
+    <div class="outline-variant">outline-variant</div>
+  </div>
+</div>
+++++
+
+=== Admonitions
+
+++++
+<div class="styletable background">
+  <div>
+    <div class="admonition-important">important</div>
+    <div class="admonition-important-container">important container</div>
+  </div>
+  <div>
+    <div class="admonition-tip">tip</div>
+    <div class="admonition-tip-container">tip container</div>
+  </div>
+  <div>
+    <div class="admonition-note">note</div>
+    <div class="admonition-note-container">note container</div>
+  </div>
+  <div>
+    <div class="admonition-error">error</div>
+    <div class="admonition-error-container">error container</div>
+  </div>
+  <div>
+    <div class="admonition-warning">warning</div>
+    <div class="admonition-warning-container">warning container</div>
+  </div>
+  <div>
+    <div class="admonition-caution">caution</div>
+    <div class="admonition-caution-container">caution container</div>
+  </div>
+</div>
+++++
+
+
 
 // end::colours[]
 // tag::typography[]

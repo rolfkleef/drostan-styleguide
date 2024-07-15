@@ -1,45 +1,18 @@
 = Visual style
 
-== Color scheme
+The visual style of my notes site is a combination of a few elements:
 
-[cols="1,3,3"]
-|===
-|Colour |Code |Type
+* The main interface tries to integrate with the Material Design 3 theme I use for my Wordpress site.
 
-|[.colorswatch.cs-primary-color]#-#
-|#08427b
-|primary
+* The navigation of components, versions, and pages, mixes Antora's approach into this interface.
 
-|[.colorswatch.cs-secondary-color]#-#
-|#1168bd
-|secondary
+* The textual content of pages is built from Asciidoc with their approach to generating HTML.
 
-|[.colorswatch.cs-heading-font-color]#-#
-|#e91e63
-|arrow
+* Diagrams can be included in various formats.
+** Diagrams made with PlantUML have their own style.
+** Mermaid diagrams are not styled yet.
+** Directory layouts are rendered with Treeview, with particular icons.
 
-|[.colorswatch.cs-link-font-color]#-#
-|#3498DB
-|link
+This reference section shows all of the visual elements.
 
-|[.colorswatch.cs-important-color]#-#
-|#d32f2f
-|important
-
-|[.colorswatch.cs-warning-color]#-#
-|#e18114
-|warning
-
-|[.colorswatch.cs-caution-color]#-#
-|#a0439c
-|caution
-
-|[.colorswatch.cs-note-color]#-#
-|#217ee7
-|note
-
-|[.colorswatch.cs-tip-color]#-#
-|#41af46
-|tip
-
-|===
+I also use this section to check style or interface updates I make.
